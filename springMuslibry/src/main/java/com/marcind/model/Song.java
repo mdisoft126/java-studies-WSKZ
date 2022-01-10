@@ -21,14 +21,15 @@ public class Song {
 	private String genre;
 	private String ismn;
 	private String year;
-	private String publisher;
+	
+	private Publisher publisher;
 	
 	@ManyToMany
 	private Set<Artist> artists = new HashSet<>();
 
 	
 	// constructors
-	public Song(String title, String genre, String ismn, String year, String publisher) {
+	public Song(String title, String genre, String ismn, String year, Publisher publisher) {
 		super();
 		this.title = title;
 		this.genre = genre;
@@ -82,11 +83,11 @@ public class Song {
 		this.year = year;
 	}
 
-	public String getPublisher() {
+	public Publisher getPublisher() {
 		return publisher;
 	}
 
-	public void setPublisher(String publisher) {
+	public void setPublisher(Publisher publisher) {
 		this.publisher = publisher;
 	}
 
