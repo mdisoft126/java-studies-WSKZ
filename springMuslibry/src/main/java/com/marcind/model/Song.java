@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Song {
@@ -22,6 +23,7 @@ public class Song {
 	private String ismn;
 	private String year;
 	
+	@ManyToOne
 	private Publisher publisher;
 	
 	@ManyToMany

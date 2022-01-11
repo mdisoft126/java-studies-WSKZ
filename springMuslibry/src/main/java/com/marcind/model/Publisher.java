@@ -21,6 +21,14 @@ public class Publisher {
 	}
 
 	
+	
+	public Publisher(String name) {
+		super();
+		this.name = name;
+	}
+
+
+
 	public Publisher(String name, String nip, String address) {
 		super();
 		this.name = name;
