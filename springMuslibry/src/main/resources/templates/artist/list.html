@@ -14,12 +14,16 @@
 			<th>First name</th>
 			<th>Last name</th>
 			<th>Nick</th>
+			<th>Actions</th>
 		</tr>
 		<tr th:each="artist : ${artists}">
 			<td th:text="${artist.id}">123</td>
 			<td th:text="${artist.firstName}">hej</td>
 			<td th:text="${artist.lastName}">co tam</td>
 			<td th:text="${artist.nick}">du du</td>
+			<td>
+				<a href='#' th:href="@{'/artist/new'}" role="button" class="btn btn-success">Add</a>
+			</td>
 		</tr>
 	</table>
 
