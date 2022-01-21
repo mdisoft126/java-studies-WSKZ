@@ -18,6 +18,7 @@ public class ArtistCommandToArtist implements Converter<ArtistCommand, Artist> {
 	public Artist convert(ArtistCommand source) {
 		
 		final Artist artist = new Artist();
+//		artist.setId(source.getId());
 		artist.setFirstName(source.getFirstName());
 		artist.setLastName(source.getLastName());
 		artist.setNick(source.getNick());

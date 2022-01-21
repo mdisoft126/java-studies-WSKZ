@@ -22,7 +22,8 @@
 			<td th:text="${artist.lastName}">co tam</td>
 			<td th:text="${artist.nick}">du du</td>
 			<td>
-				<a href='#' th:href="@{'/artist/new'}" role="button" class="btn btn-success">Add</a>
+				<a href='#' th:href="@{'/artist/new'}" role="button" class="btn btn-success" style="margin-right: 5px;">Add</a>
+				<a href='#' th:href="@{'/artist/' + ${artist.id} + '/edit'}" role="button" class="btn btn-success">Edit</a>
 			</td>
 		</tr>
 	</table>
