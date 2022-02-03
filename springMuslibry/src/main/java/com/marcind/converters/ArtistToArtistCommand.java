@@ -21,8 +21,9 @@ public class ArtistToArtistCommand implements Converter<Artist, ArtistCommand>{
 		command.setId(source.getId());
 		command.setFirstName(source.getFirstName());
 		command.setLastName(source.getLastName());
+		command.setNick(source.getNick());
 		// TODO Auto-generated method stub
-		return null;
+		return command;
 	}
 	
 

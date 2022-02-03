@@ -8,7 +8,8 @@ import com.marcind.model.Artist;
 
 public interface ArtistRepository extends CrudRepository<Artist, Long>{
 	
-	Optional<Artist> getFisrtByFirstNameAndLastName(String firsName, String lastName);
+	Optional<Artist> getFisrtByFirstNameAndLastName(String firstName, String lastName);
 	Optional<Artist> getFirstByFirstName(String firstName);
+	Optional<Artist> getFirstById(Long id);
 
 }
