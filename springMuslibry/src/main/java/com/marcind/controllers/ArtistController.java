@@ -1,5 +1,7 @@
 package com.marcind.controllers;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,12 +44,25 @@ public class ArtistController {
 		return "artist/addedit";
 	}
 	
+	
 	@PostMapping("artist")
 	public String saveOrUpdate(@ModelAttribute ArtistCommand command) {
 
-		Artist detachedArtist = artistCommandToArtist.convert(command);
-		Artist savedArtist = artistRepository.save(detachedArtist);
-		return "redirect:/artist/" + savedArtist.getId() + "/show";
+		Optional<Artist> artistOptional = artistRepository.findById(command.getId());
+		
+		if (!artistOptional.isPresent()) {
+			Artist detachedArtist = artistCommandToArtist.convert(command);
+			Artist savedArtist = artistRepository.save(detachedArtist);
+			return "redirect:/artist/" + savedArtist.getId() + "/show";
+		} else {
+			System.out.println("There is such artist in db");
+			Artist artistFromDatabase = artistOptional.get();
+			artistFromDatabase.setFirstName(command.getFirstName());
+			artistFromDatabase.setLastName(command.getLastName());
+			artistFromDatabase.setNick(command.getNick());
+			artistRepository.save(artistFromDatabase);
+			return "redirect:/artist/" + artistFromDatabase.getId() + "/show";
+		}
 	}
 	
 	@RequestMapping("/artist/{id}/edit")
