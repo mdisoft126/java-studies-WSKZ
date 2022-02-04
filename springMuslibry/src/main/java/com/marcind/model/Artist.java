@@ -3,6 +3,7 @@ package com.marcind.model;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,7 +26,7 @@ public class Artist {
 	private String lastName;
 	private String nick;
 	
-	@ManyToMany(mappedBy = "artists")
+	@ManyToMany(mappedBy = "artists", cascade = CascadeType.ALL)
 	private Set<Song> songs = new HashSet<>();
 	
 	// constructors

@@ -24,6 +24,8 @@
 			<td>
 				<a href='#' th:href="@{'/artist/new'}" role="button" class="btn btn-success" style="margin-right: 5px;">Add</a>
 				<a href='#' th:href="@{'/artist/' + ${artist.id} + '/edit'}" role="button" class="btn btn-success">Edit</a>
+				<a href='#' th:href="@{'/artist/' + ${artist.id} + '/show'}" role="button" class="btn btn-success">Show</a>
+				<a href='#' th:href="@{'/artist/' + ${artist.id} + '/delete'}" role="button" class="btn btn-success">Delete</a>
 			</td>
 		</tr>
 	</table>

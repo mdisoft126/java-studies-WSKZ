@@ -73,4 +73,16 @@ public class ArtistController {
 		return "artist/addedit";
 	}
 	
+	@RequestMapping("/artist/{id}/show")
+	public String getArtistDetails(Model model, @PathVariable("id") Long id) {
+		model.addAttribute("artist", artistRepository.findById(id).get());
+		return "artist/show";
+	}
+	
+	@RequestMapping("/artist/{id}/delete")
+	public String deleteArtist(@PathVariable("id") Long id) {
+		artistRepository.deleteById(id);
+		return "redirect:/artist/list";
+	}
+	
 }
