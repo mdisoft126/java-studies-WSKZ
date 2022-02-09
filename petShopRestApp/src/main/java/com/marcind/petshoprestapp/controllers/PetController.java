@@ -31,7 +31,7 @@ public class PetController {
 	@GetMapping("findByStatus")
 	public ResponseEntity<PetListDTO> getPetsByStatus(@RequestParam String status) {
 		return new ResponseEntity<PetListDTO>(
-			new PetListDTO(petService.getPetByStatus(status)), HttpStatus.OK);
+			new PetListDTO(petService.getPetsByStatus(status)), HttpStatus.OK);
 	}
 }
  

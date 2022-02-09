@@ -16,7 +16,7 @@ public class PetServiceImpl implements PetService {
 	PetMapper petMapper;
 	
 	public PetServiceImpl(PetRepository petRepository, PetMapper petMapper) {
-		super();
+//		super();
 		this.petRepository = petRepository;
 		this.petMapper = petMapper;
 	}
@@ -35,8 +35,7 @@ public class PetServiceImpl implements PetService {
 	}
 
 	@Override
-	public List<PetDTO> getPetByStatus(String status) {
-		// TODO Auto-generated method stub
+	public List<PetDTO> getPetsByStatus(String status) {
 		return petRepository.getByStatus(status)
 				.stream()
 				.map(petMapper::petToPetDTO)

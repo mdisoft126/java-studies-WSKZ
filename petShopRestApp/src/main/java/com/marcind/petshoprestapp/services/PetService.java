@@ -7,6 +7,6 @@ public interface PetService {
 	
 	List<PetDTO> getAllPets();
 	PetDTO getPetById(Long id);
-	List<PetDTO> getPetByStatus(String status);
+	List<PetDTO> getPetsByStatus(String status);
 
 }

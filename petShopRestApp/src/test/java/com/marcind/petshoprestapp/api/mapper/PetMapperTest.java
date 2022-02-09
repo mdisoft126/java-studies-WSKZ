@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import com.marcind.petshoprestapp.api.model.PetDTO;
 import com.marcind.petshoprestapp.domain.Pet;
-import static org.junit.Assert.*;
 
 class PetMapperTest {
 	
@@ -25,6 +24,16 @@ class PetMapperTest {
 		assertEquals(Long.valueOf(1L), petDTO.getId());
 		assertEquals("Pet", petDTO.getName());
 		assertEquals("available", petDTO.getStatus());
+		
+	}
+
+	private void assertEquals(String string, String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void assertEquals(Long valueOf, Long id) {
+		// TODO Auto-generated method stub
 		
 	}
 }
