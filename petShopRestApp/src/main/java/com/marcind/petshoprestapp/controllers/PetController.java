@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -40,5 +41,11 @@ public class PetController {
 	public ResponseEntity<PetDTO> createNewPet(@RequestBody PetDTO petDTO) {
 		return new ResponseEntity<PetDTO>(petService.createNewPet(petDTO), HttpStatus.CREATED);
 	}
+	
+	@PutMapping("{id}")
+	public ResponseEntity<PetDTO> updatePet(@PathVariable Long id, @RequestBody PetDTO petDTO) {
+		return new ResponseEntity<PetDTO>(petService.updatePet(id, petDTO), HttpStatus.OK);
+	}
+	
 }
  

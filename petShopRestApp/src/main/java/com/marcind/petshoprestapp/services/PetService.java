@@ -10,5 +10,7 @@ public interface PetService {
 	List<PetDTO> getPetsByStatus(String status);
 	
 	PetDTO createNewPet(PetDTO petDTO);
+	
+	PetDTO updatePet(Long id, PetDTO petDTO);
 
 }

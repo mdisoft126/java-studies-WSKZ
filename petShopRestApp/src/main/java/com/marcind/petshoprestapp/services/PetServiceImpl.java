@@ -52,4 +52,15 @@ public class PetServiceImpl implements PetService {
 		return petMapper.petToPetDTO(savedPet);
 	}
 
+	@Override
+	public PetDTO updatePet(Long id, PetDTO petDTO) {
+		
+		Pet pet = petMapper.petDTOtoPet(petDTO);
+		pet.setId(id);
+		
+		Pet savedPet = petRepository.save(pet);
+		
+		return petMapper.petToPetDTO(savedPet);
+	}
+
 }
