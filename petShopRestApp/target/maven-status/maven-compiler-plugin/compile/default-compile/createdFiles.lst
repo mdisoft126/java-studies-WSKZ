@@ -1,0 +1,11 @@
+com\marcind\petshoprestapp\domain\Pet.class
+com\marcind\petshoprestapp\repositories\PetRepository.class
+com\marcind\petshoprestapp\api\mapper\PetMapperImpl.class
+com\marcind\petshoprestapp\PetShopRestAppApplication.class
+com\marcind\petshoprestapp\bootrstrap\DBDataLoader.class
+com\marcind\petshoprestapp\api\model\PetListDTO.class
+com\marcind\petshoprestapp\controllers\PetController.class
+com\marcind\petshoprestapp\api\model\PetDTO.class
+com\marcind\petshoprestapp\services\PetServiceImpl.class
+com\marcind\petshoprestapp\services\PetService.class
+com\marcind\petshoprestapp\api\mapper\PetMapper.class

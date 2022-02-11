@@ -12,7 +12,7 @@ public class DBDataLoader implements CommandLineRunner {
 	PetRepository petRepository;
 	
 	public DBDataLoader(PetRepository petRepository) {
-		super();
+//		super();
 		this.petRepository = petRepository;
 	}
 
