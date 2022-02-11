@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.marcind.petshoprestapp.api.mapper.PetMapper;
 import com.marcind.petshoprestapp.api.model.PetDTO;
+import com.marcind.petshoprestapp.domain.Pet;
 import com.marcind.petshoprestapp.repositories.PetRepository;
 
 @Service
@@ -40,6 +41,15 @@ public class PetServiceImpl implements PetService {
 				.stream()
 				.map(petMapper::petToPetDTO)
 				.collect(Collectors.toList());
+	}
+
+	@Override
+	public PetDTO createNewPet(PetDTO petDTO) {
+		
+		Pet pet = petMapper.petDTOtoPet(petDTO);
+		Pet savedPet = petRepository.save(pet);
+		
+		return petMapper.petToPetDTO(savedPet);
 	}
 
 }
