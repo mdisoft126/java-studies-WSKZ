@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.marcind.petshoprestapp.api.model.PetDTO;
 import com.marcind.petshoprestapp.api.model.PetListDTO;
 import com.marcind.petshoprestapp.services.PetService;
 
-@Controller
+@RestController
 @RequestMapping("/api/pet/")
 public class PetController {
 	
@@ -28,8 +30,9 @@ public class PetController {
 	}
 
 	@GetMapping("{id}")
-	public ResponseEntity<PetDTO> getPetById(@PathVariable Long id) {
-		return new ResponseEntity<PetDTO>(petService.getPetById(id), HttpStatus.OK);
+	@ResponseStatus(HttpStatus.OK) //new way of working --> RestController instead of Controller
+	public PetDTO getPetById(@PathVariable Long id) {
+		return petService.getPetById(id);
 	}
 	
 	@GetMapping("findByStatus/{status}")
