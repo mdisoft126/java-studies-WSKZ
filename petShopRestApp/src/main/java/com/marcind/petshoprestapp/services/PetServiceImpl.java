@@ -63,4 +63,9 @@ public class PetServiceImpl implements PetService {
 		return petMapper.petToPetDTO(savedPet);
 	}
 
+	@Override
+	public void deletePetById(Long id) {
+		petRepository.deleteById(id);
+	}
+
 }
