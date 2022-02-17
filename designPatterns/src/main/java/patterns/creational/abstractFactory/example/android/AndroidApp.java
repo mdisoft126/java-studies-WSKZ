@@ -1,18 +1,18 @@
 package patterns.creational.abstractFactory.example.android;
 
+import patterns.creational.abstractFactory.example.AppFactory;
 import patterns.creational.abstractFactory.example.Menu;
 import patterns.creational.abstractFactory.example.Sound;
 
-public class AndroidApp implements Sound, Menu {
+public class AndroidApp implements AppFactory {
 
 	@Override
-	public void showMenu() {
-		System.out.println("Showing Android menu");
+	public Menu menu() {
+		return new AndroidMenu();
 	}
 
 	@Override
-	public void playSound() {
-		System.out.println("Playing Android sound");
-	}
-	
+	public Sound sound() {
+		return new AndroidSound();
+	}	
 }

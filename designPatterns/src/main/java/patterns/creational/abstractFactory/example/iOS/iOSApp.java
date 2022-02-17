@@ -1,18 +1,19 @@
 package patterns.creational.abstractFactory.example.iOS;
 
+import patterns.creational.abstractFactory.example.AppFactory;
 import patterns.creational.abstractFactory.example.Menu;
 import patterns.creational.abstractFactory.example.Sound;
 
-public class iOSApp implements Sound, Menu {
+public class iOSApp implements AppFactory {
 
 	@Override
-	public void showMenu() {
-		System.out.println("Showing iOS menu");
+	public Menu menu() {
+		return new IOSMenu();
 	}
 
 	@Override
-	public void playSound() {
-		System.out.println("Playing iOS sound");
+	public Sound sound() {
+		return new IOSSound();
 	}
 	
 }

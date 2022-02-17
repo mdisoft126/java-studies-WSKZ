@@ -3,18 +3,16 @@ package patterns.creational.abstractFactory.example;
 import patterns.creational.abstractFactory.example.android.AndroidApp;
 import patterns.creational.abstractFactory.example.iOS.iOSApp;
 
+
 public class Main {
 
 	public static void main(String[] args) {
 
-		iOSApp iosApp = new iOSApp();
-		iosApp.showMenu();
-		iosApp.playSound();
+		App iosApp = new App(new iOSApp());
+		iosApp.run();
 		
-		AndroidApp androidApp = new AndroidApp();
-		androidApp.showMenu();
-		androidApp.playSound();
-		
+		App androidApp = new App(new AndroidApp());
+		androidApp.run();
 	}
 
 }
