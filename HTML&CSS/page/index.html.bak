@@ -4,13 +4,18 @@
 		<meta charset="UTF-8"/>
 		<meta name="keywords" content="Key words abdout page"/>
 		<meta name="description" content="Page description"/>
-		
+		<meta name="author" content="Jan Kowalski"/>
+		<meta name="generator" content="Notepad++"/>
+		<meta name="robots" content="all"/>
 	</head>
 	
-	<body>
-	
+	<body style="font-size:80px">
+		<p style="font-size:30px;color:red">Formatowanie tekstu</p>
+		<p style="font-size:0.5em">Formatowanie tekstu</p>
+		<p style="font-size:xx-small">Formatowanie tekstu</p>
 
-
+		<p style="font-size:30px;color:#60AAFF">Formatowanie tekstu</p>
+		<p style="font-size:30px;color:rgb(30,50,255)">Formatowanie tekstu</p>
 
 
 
