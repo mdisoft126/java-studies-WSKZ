@@ -1,14 +1,22 @@
-<b>Pogrubiony text</b>
+<!doctype html>
+	<head>
+		<title>HTML and CSS</title>
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="Key words abdout page"/>
+		<meta name="description" content="Page description"/>
+		
+	</head>
+	
+	<body>
+	
 
-<section>Podział obszaru na fragmenty</section>
 
-<header>Nagłówek sewisu</header>
 
-<footer>Stopka</footer>
 
-<nav>Sekcja nawigacyjna</nav>
 
-<article>Artykuły, treść</article>
 
-<div>Pojemnik, kontener dla innych znaczników</div>
+
+
+	</body>
+</html>
 
