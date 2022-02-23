@@ -11,10 +11,8 @@
 	
 	<body>
 
-		<a href="https://google.pl">Click</a>
-		<a href="file.html" target="_blank">File</a>
-		<a href="mailto:jan@wp.pl">Mail to</a>
-		
+		<a href="http://www.wskz.pl"><img src="pictures\obrazek.jpg" height="50%" width="50%"/></a>
+		<img src="pictures\obrazek1.jpg" height="50%" width="50%" alt="Connection error"/>
 
 	</body>
 </html>
