@@ -11,17 +11,10 @@
 	
 	<body>
 
-		<p><b>Bold text</b></p>
-		<p><u>Underlined text</u></p>
-		<p><i>Italic text</i></p>
-		<p><em>Highlighted text</em></p>
-		<p><strong>Important text</strong></p>
+		<a href="https://google.pl">Click</a>
+		<a href="file.html" target="_blank">File</a>
+		<a href="mailto:jan@wp.pl">Mail to</a>
 		
-		<p style="font-family:arial">Font style</p>
-		<p>Font style</p>
-
-		<p style="text-align:right;color:blue;font-family:Times New Roman,Times,serif"><u>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et lacus ac erat auctor sagittis eu vel purus. Sed iaculis semper massa, ut egestas odio. Maecenas porta odio in risus faucibus, sed lobortis arcu sollicitudin. Etiam eu dolor dui. Quisque iaculis suscipit posuere. Fusce pretium eleifend felis placerat ornare. Curabitur vehicula tincidunt condimentum. Pellentesque hendrerit risus at purus venenatis, nec bibendum libero sollicitudin. Praesent venenatis mi eu mauris consequat vestibulum. In fermentum eu est vel congue.</u></p>
-
 
 	</body>
 </html>
