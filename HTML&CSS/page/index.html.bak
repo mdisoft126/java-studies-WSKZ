@@ -7,28 +7,21 @@
 		<meta name="author" content="Jan Kowalski"/>
 		<meta name="generator" content="Notepad++"/>
 		<meta name="robots" content="all"/>
+		<link rel="stylesheet" href="style.css"/>
 	</head>
+	
+	<style>
+	
+		p {
+			color:blue;
+		}
+	
+	</style>
 	
 	<body>
 		
-		<table border="1">
-		
-			<tr> <th>Name</th> <th>Surname</th> <th>Age</th> </tr>
-			<tr> <td>Jan</td> <td>Nowak</td> <td rowspan="2">20</td> </tr>
-			<tr> <td colspan="2">Adam Kowalski</td> </tr>
-		
-		</table>
-		
-		<table border="1" style="border-spacing:0; background-color:red">
-		
-			<tr style="height:22px"> <th style="width:30px">No.</th> <th style="width:300px">Name</th> <th style="width:200px">Surname</th> <th style="width:200px">Age</th> </tr>
-			<tr style="height:22px"> <td></td> <td></td> <td></td> <td></td> </tr>
-			<tr style="height:22px"> <td></td> <td></td> <td></td> <td></td> </tr>
-			<tr style="height:22px"> <td></td> <td></td> <td></td> <td></td> </tr>
-
-		
-		</table>
-		
+		<p>Paragraph</>
+		<p>Paragraph2</>
 
 	</body>
 </html>
