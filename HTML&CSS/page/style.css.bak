@@ -1,0 +1,11 @@
+p {
+	color: green;
+}
+
+#logo{
+	color: green;	
+}
+
+#content{
+	color: blue;	
+}

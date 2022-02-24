@@ -7,21 +7,15 @@
 		<meta name="author" content="Jan Kowalski"/>
 		<meta name="generator" content="Notepad++"/>
 		<meta name="robots" content="all"/>
+		
 		<link rel="stylesheet" href="style.css"/>
 	</head>
 	
-	<style>
-	
-		p {
-			color:blue;
-		}
-	
-	</style>
-	
 	<body>
 		
-		<p>Paragraph</>
-		<p>Paragraph2</>
+		<div id="logo">Logo</div>
+		<div id="content">Content</div>
+		
 
 	</body>
 </html>
