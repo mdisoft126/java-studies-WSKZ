@@ -1,0 +1,13 @@
+#logo{
+	background-color:aqua;
+	height:25px;
+	text-align:center;
+}
+
+#nav{
+	background-color:blue;
+	height:15px;
+	text-align:center;
+	color:black;
+	text-decoration:none;
+}	

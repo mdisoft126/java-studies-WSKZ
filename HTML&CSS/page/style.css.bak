@@ -1,11 +1,31 @@
-p {
-	color: green;
+#logo{
+	background-color:red;
+	height:25px;
 }
 
-#logo{
-	color: green;	
+#menu{
+	background-color:black;
+	height:15px;
+}
+
+.nav{
+	float:left;
+	color:white;
+	background-color:gray;
+	height:15px;
+	margin-right: 10px;
+	margin-left: 10px;
+	width:80px;
+	text-align:center;
 }
 
 #content{
-	color: blue;	
+	background-color:yellow;
+	height:200px;
 }
+
+#footer{
+	background-color:red;
+	height:10px;
+}
+	

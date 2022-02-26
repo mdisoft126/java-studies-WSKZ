@@ -1,0 +1,35 @@
+<!doctype html>
+	<head>
+		<title>Template</title>
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="Key words abdout page"/>
+		<meta name="description" content="Page description"/>
+		<meta name="author" content="Jan Kowalski"/>
+		<meta name="generator" content="Notepad++"/>
+		<meta name="robots" content="all"/>
+		
+		<link rel="stylesheet" href="templatestyle.css"/>
+	</head>
+	
+	<body>
+		
+		<header id="header">
+			<div id="logo">Logo</div>
+		</header>
+		<nav id="nav">
+			<a class="navi" href="#">Offer</a>
+			<a class="navi" href="#">About us</a>
+			<a class="navi" href="#">Contact</a>
+		</nav>
+		<main id="main">
+			<section id="sidebar">
+				<a class="sidemenu" href="#">Offer</a>
+				<a class="sidemenu" href="#">Offer</a>
+				<a class="sidemenu" href="#">Offer</a>
+			</section>
+			<section id="content">Content</section>
+		</main>		
+		<footer id="footer">Footer</footer>		
+		
+	</body>
+</html>
