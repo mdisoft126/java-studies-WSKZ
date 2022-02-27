@@ -14,7 +14,7 @@
 	<body>
 		
 		<header id="header">
-			<div id="logo">Logo</div>
+			<p id="logo">Logo</p>
 		</header>
 		<nav id="nav">
 			<a class="navi" href="#">Offer</a>
@@ -23,13 +23,18 @@
 		</nav>
 		<main id="main">
 			<section id="sidebar">
-				<a class="sidemenu" href="#">Offer</a>
-				<a class="sidemenu" href="#">Offer</a>
-				<a class="sidemenu" href="#">Offer</a>
+				<a class="sidemenu" href="#">Arrangement</a>
+				<a class="sidemenu" href="#">Gallery</a>
+				<a class="sidemenu" href="#">Implementation</a>
 			</section>
-			<section id="content">Content</section>
+			<section id="content">
+				<p>Welcome to the website</p>
+			</section>
 		</main>		
-		<footer id="footer">Footer</footer>		
+		
+		<footer id="footer">
+			<p>Footer</p>
+		</footer>		
 		
 	</body>
 </html>
