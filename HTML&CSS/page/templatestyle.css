@@ -19,10 +19,24 @@ html, body {
 #nav{
 	height:15vh;
 	background-color:blue;
-	line-height:15vh;
 	text-align:center;
 	color:black;
 	text-decoration:none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#nav a{
+	color:black;
+	text-decoration:none;
+	font-size:1.5em;
+	border-style: solid;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+	padding-right: 1vw;
+	padding-left: 1vw;
 }
 
 /* Main */
@@ -83,6 +97,7 @@ html, body {
 }
 
 #footer p{
-	margin:0;
+	margin-right:20vw;
+	margin-bottom:5vh;
 	font-size:1.5em;
 }

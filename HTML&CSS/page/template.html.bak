@@ -14,7 +14,7 @@
 	<body>
 		
 		<header id="header">
-			<p id="logo">Logo</p>
+			<div id="logo">Logo</div>
 		</header>
 		<nav id="nav">
 			<a class="navi" href="#">Offer</a>
