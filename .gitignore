@@ -2,3 +2,6 @@
 .project
 bin/
 petShopRestApp/bin/
+
+JavaScript/server/*
+!JavaScript/server/htdocs/
