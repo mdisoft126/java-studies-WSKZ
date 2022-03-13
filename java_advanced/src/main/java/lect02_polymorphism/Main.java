@@ -22,6 +22,14 @@ public class Main {
 		System.out.println(vehicle);
 		System.out.println(wheeledVehicle);
 		System.out.println(car);
+		
+		System.out.println("--Polymorphism");
+		WheeledVehicle car1 = new Car(111, 4, "BMW");
+		System.out.println(car1);
+		System.out.println(car1.getClass());
+		Vehicle car2 = new Car(222, 4, "Audi");
+		System.out.println(car2);
+		System.out.println(car2.getClass());
 	}
 
 }
