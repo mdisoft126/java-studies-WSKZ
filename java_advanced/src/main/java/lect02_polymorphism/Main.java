@@ -1,6 +1,10 @@
 package lect02_polymorphism;
 
 public class Main {
+	
+	private boolean hasMoreWheels(Vehicle v1, Vehicle v2) {
+		return ((Car) v1).getWheelsNo() > ((Car) v2).getWheelsNo();
+	}
 
 	public static void main(String[] args) {
 	
@@ -30,6 +34,15 @@ public class Main {
 		Vehicle car2 = new Car(222, 4, "Audi");
 		System.out.println(car2);
 		System.out.println(car2.getClass());
+		Object car3 = new Car(333, 6, "MAN");
+		System.out.println(car3);
+		System.out.println(car3.getClass());
+		
+		System.out.println("Comparison");
+		Main main = new Main();
+		System.out.println(main.hasMoreWheels(car1,(Vehicle) car3));
+		System.out.println(main.hasMoreWheels((Vehicle) car3, car1));
+		System.out.println(main.hasMoreWheels(car1, car2));
 	}
 
 }
