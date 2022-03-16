@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Task {
-	private String title;
+	public String title;
 	private LocalDateTime registrationTime;
 	private int days;
 
