@@ -10,5 +10,7 @@ public interface DirectorService {
 	void saveDirector(DirectorDto directorDto);
 	
 	List<Director> getAllDirectors();
+	
+	void deleteDirectorById(Long id);
 
 }

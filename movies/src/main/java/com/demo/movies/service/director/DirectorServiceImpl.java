@@ -28,4 +28,9 @@ public class DirectorServiceImpl implements DirectorService {
 	public List<Director> getAllDirectors() {
 		return directorRepository.findAll();
 	}
+
+	@Override
+	public void deleteDirectorById(Long id) {
+		directorRepository.deleteDirectorById(id);
+	}
 }
