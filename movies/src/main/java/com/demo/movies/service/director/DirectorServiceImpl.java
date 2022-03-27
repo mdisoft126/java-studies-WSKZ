@@ -1,5 +1,7 @@
 package com.demo.movies.service.director;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.demo.movies.dto.DirectorDto;
@@ -20,5 +22,10 @@ public class DirectorServiceImpl implements DirectorService {
 		director.setName(directorDto.getName());
 		director.setSurname(directorDto.getSurname());
 		directorRepository.save(director);
+	}
+
+	@Override
+	public List<Director> getAllDirectors() {
+		return directorRepository.findAll();
 	}
 }
