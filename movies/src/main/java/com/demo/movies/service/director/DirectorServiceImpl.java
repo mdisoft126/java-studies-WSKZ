@@ -1,6 +1,7 @@
 package com.demo.movies.service.director;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -32,5 +33,17 @@ public class DirectorServiceImpl implements DirectorService {
 	@Override
 	public void deleteDirectorById(Long id) {
 		directorRepository.deleteDirectorById(id);
+	}
+
+	@Override
+	public void updateDirectorNameAndSurname(DirectorDto directorDto) {
+		Optional<Director> directorOptional = directorRepository.findById(directorDto.getId());
+		Director director;
+		if (directorOptional.isPresent()) {
+			director = directorOptional.get();
+			director.setName(directorDto.getName());
+			director.setSurname(directorDto.getSurname());
+			directorRepository.save(director);
+		}
 	}
 }

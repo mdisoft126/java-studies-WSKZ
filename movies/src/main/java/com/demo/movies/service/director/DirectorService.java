@@ -12,5 +12,7 @@ public interface DirectorService {
 	List<Director> getAllDirectors();
 	
 	void deleteDirectorById(Long id);
+	
+	void updateDirectorNameAndSurname(DirectorDto directorDto);
 
 }
