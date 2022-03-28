@@ -1,5 +1,6 @@
 package com.demo.movies.conroller;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -41,7 +42,7 @@ public class DirectorController {
 	}
 	
 	@PatchMapping("update-director")
-	private ResponseEntity<String> updateDirectorNameAndSurname(@RequestBody DirectorDto directorDto) {
+	private ResponseEntity<String> updateDirectorNameAndSurname(@RequestBody DirectorDto directorDto) throws SQLException {
 		directorService.updateDirectorNameAndSurname(directorDto);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}

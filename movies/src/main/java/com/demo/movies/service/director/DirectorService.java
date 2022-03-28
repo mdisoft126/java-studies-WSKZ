@@ -1,5 +1,6 @@
 package com.demo.movies.service.director;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import com.demo.movies.dto.DirectorDto;
@@ -13,6 +14,6 @@ public interface DirectorService {
 	
 	void deleteDirectorById(Long id);
 	
-	void updateDirectorNameAndSurname(DirectorDto directorDto);
+	void updateDirectorNameAndSurname(DirectorDto directorDto) throws SQLException;
 
 }

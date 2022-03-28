@@ -1,7 +1,10 @@
 package com.demo.movies.service.director;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
+
+import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
@@ -36,7 +39,8 @@ public class DirectorServiceImpl implements DirectorService {
 	}
 
 	@Override
-	public void updateDirectorNameAndSurname(DirectorDto directorDto) {
+	@Transactional(rollbackOn = {SQLException.class})
+	public void updateDirectorNameAndSurname(DirectorDto directorDto) throws SQLException {
 		Optional<Director> directorOptional = directorRepository.findById(directorDto.getId());
 		Director director;
 		if (directorOptional.isPresent()) {
@@ -44,6 +48,7 @@ public class DirectorServiceImpl implements DirectorService {
 			director.setName(directorDto.getName());
 			director.setSurname(directorDto.getSurname());
 			directorRepository.save(director);
+			throw new SQLException();
 		}
 	}
 }
